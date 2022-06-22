@@ -1,0 +1,29 @@
+{
+  "name": "automatedtest_starterkit",
+  "version": "0.0.0",
+  "description": "This repo might help if you are getting started with test automation (or automation in general) with Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test:gui:chrome": "mocha test/gui/test_with_chrome.js --reporter mochawesome"
+  },
+  "keywords": [
+    "automation;test",
+    "automation;testing;selenium;mocha",
+    "mochawesome;axios;beginner"
+  ],
+  "author": "Lucien BILL",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chai": "^4.3.6",
+    "chromedriver": "^87.0.0",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3",
+    "selenium-webdriver": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "2.5.1"
+  }
+}
