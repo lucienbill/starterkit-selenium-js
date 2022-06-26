@@ -1,0 +1,17 @@
+{
+    "env": {
+        "node":true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2021 // compatible with node v16 ; see https://kangax.github.io/compat-table/es2016plus/#node16_11
+    },
+    "rules": {
+        "prefer-const": "error",
+        "no-use-before-define": "error"
+    },
+    "extends": [
+        "prettier"
+    ],
+    "ignorePatterns": ["mochawesome-report/*"]
+}
