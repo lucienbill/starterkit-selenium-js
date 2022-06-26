@@ -43,7 +43,7 @@ describe("Mocha has some interresting capabilities", () => {
     describe("This is written before the 'it' blocks, but shown after in the report", () => {
       it(
         "When a test has 'it' and 'describe' elements at the same level, \
-      they won't necesseraly be executed from top to bottom."
+      they won't necessarily be executed from top to bottom."
       );
     });
     it("The code you want to test must be in a 'it' block");
