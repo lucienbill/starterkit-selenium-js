@@ -3,7 +3,7 @@ const chrome = require("selenium-webdriver/chrome");
 const addContext = require("mochawesome/addContext");
 const fs = require("fs");
 
-let increment = (function (n) {
+const increment = (function (n) {
   return function () {
     n += 1;
     return n;
