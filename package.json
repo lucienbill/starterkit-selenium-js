@@ -4,12 +4,18 @@
   "description": "This repo might help if you are getting started with test automation (or automation in general) with Node.js",
   "main": "index.js",
   "scripts": {
+    "eslint": "eslint",
+    "prettier": "prettier",
     "test:gui:chrome": "mocha test/gui/test_with_chrome.js --reporter mochawesome"
   },
   "keywords": [
-    "automation;test",
-    "automation;testing;selenium;mocha",
-    "mochawesome;axios;beginner"
+    "automation",
+    "testing",
+    "selenium",
+    "mocha",
+    "mochawesome",
+    "beginner",
+    "test-automation"
   ],
   "author": "Lucien BILL",
   "license": "MIT",
