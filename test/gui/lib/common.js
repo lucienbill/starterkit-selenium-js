@@ -3,6 +3,13 @@ const chrome = require("selenium-webdriver/chrome");
 const addContext = require("mochawesome/addContext");
 const fs = require("fs");
 
+/* 
+    This makes sure my code code know where to find the chromedriver
+    Which version? See package.json
+    Probably works with other browsers
+*/
+require("chromedriver");
+
 const increment = (function (n) {
   return function () {
     n += 1;

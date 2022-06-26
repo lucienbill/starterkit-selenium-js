@@ -1,6 +1,6 @@
 // Dependencies
 const { describe, it } = require("mocha");
-const { By, Key, /*Builder,*/ until } = require("selenium-webdriver");
+const { By /* Key, Builder, until */ } = require("selenium-webdriver");
 const addContext = require("mochawesome/addContext");
 const common = require("./lib/common");
 const { expect } = require("chai");
@@ -9,13 +9,6 @@ const path = require("path");
 // Local Dependencies
 const somepage = require("./lib/pages/localpage/somepage");
 
-/* 
-    This makes sure my code code know where to find the chromedriver
-    Which version? See package.json
-    Probably works with other browsers
-*/
-require("chromedriver");
-
 let driver;
 // This is the first thing my script does
 before("Open a browser", async function () {
@@ -23,7 +16,7 @@ before("Open a browser", async function () {
 });
 
 // This is the last thing my script does
-after("Fermer le navigateur", async function () {
+after("Close the browser", async function () {
   await common.closeBrowser(driver);
 });
 
